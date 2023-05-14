@@ -5,6 +5,7 @@ from AnnotatedSentence.AnnotatedSentence import AnnotatedSentence
 
 class SentenceAutoArgument:
 
+    
     @abstractmethod
     def autoArgument(self, sentence: AnnotatedSentence) -> bool:
         """
