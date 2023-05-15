@@ -1,3 +1,4 @@
+# Có 4 module được import từ 4 module
 from FrameNet.FrameNet import FrameNet
 
 from AnnotatedSentence.AnnotatedSentence import AnnotatedSentence
@@ -5,6 +6,10 @@ from AnnotatedSentence.AnnotatedWord import AnnotatedWord
 from SemanticRoleLabeling.Sentence.FrameNet.SentenceAutoFramePredicate import SentenceAutoFramePredicate
 
 
+# Class TurkishSentenceAutoFramePredicate kế thừa từ class SentenceAutoFramePredicate
+# Class có 1 property là _frame_net
+# Class này có 1 hàm constructor là __init__
+# Class này có hàm autoPredicate
 class TurkishSentenceAutoFramePredicate(SentenceAutoFramePredicate):
 
     __frame_net: FrameNet
